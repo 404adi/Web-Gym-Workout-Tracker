@@ -1,0 +1,217 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#121212;
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#000;
+}
+
+.navbar h2{
+color:#ff7b00;
+}
+
+.navbar button{
+background:#ff7b00;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:50vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+/* CONTAINER */
+
+.container{
+padding:60px 10%;
+text-align:center;
+}
+
+/* MUSCLE GRID */
+
+.muscle-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.muscle-card{
+background:#1f1f1f;
+padding:30px;
+border-radius:12px;
+cursor:pointer;
+transition:0.3s;
+border:2px solid transparent;
+}
+
+.muscle-card i{
+font-size:35px;
+color:#ff7b00;
+margin-bottom:10px;
+}
+
+.muscle-card:hover{
+box-shadow:0 0 15px #ff7b00;
+transform:translateY(-5px);
+}
+
+.active-muscle{
+border:2px solid #ff7b00;
+box-shadow:0 0 20px #ff7b00;
+}
+
+/* EXERCISES */
+
+.exercise-section{
+padding:40px 10%;
+text-align:center;
+margin-top:30px;
+}
+
+.exercise-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.exercise{
+background:#1f1f1f;
+padding:20px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.exercise:hover{
+background:#ff7b00;
+transform:scale(1.05);
+}
+
+/* WORKOUT LIST */
+
+.workout-muscle{
+margin-top:20px;
+background:#1f1f1f;
+padding:15px;
+border-radius:10px;
+}
+
+.workout-muscle h3{
+color:#ff7b00;
+margin-bottom:10px;
+}
+
+.workout-muscle li{
+display:flex;
+justify-content:space-between;
+padding:8px;
+}
+
+/* DELETE ICON */
+
+.delete-icon{
+color:#ff7b00;
+cursor:pointer;
+}
+
+.delete-icon:hover{
+color:red;
+}
+
+/* BMI POPUP */
+
+.bmi-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+.bmi-card{
+background:#1f1f1f;
+padding:40px;
+border-radius:15px;
+width:350px;
+text-align:center;
+position:relative;
+}
+
+.bmi-card h2{
+margin-bottom:20px;
+color:#ff7b00;
+}
+
+.bmi-card input{
+width:80%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:5px;
+}
+
+.bmi-card button{
+background:#ff7b00;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* CLOSE ICON */
+
+.close-icon{
+position:absolute;
+top:15px;
+right:15px;
+cursor:pointer;
+font-size:20px;
+color:white;
+}
+
+.close-icon:hover{
+color:red;
+}

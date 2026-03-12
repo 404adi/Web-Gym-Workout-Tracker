@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Gym Workout Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>GymTracker</h2>
+
+<button onclick="openBMI()">BMI Calculator</button>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Train Hard. Track Progress.</h1>
+<p>Select muscles and build your workout</p>
+
+</section>
+
+
+<section class="container">
+
+<h2>Select Muscle Group</h2>
+
+<div class="muscle-grid">
+
+<div class="muscle-card" onclick="showExercises('chest', this)">
+<i class="fa-solid fa-dumbbell"></i>
+<p>Chest</p>
+</div>
+
+<div class="muscle-card" onclick="showExercises('back', this)">
+<i class="fa-solid fa-user"></i>
+<p>Back</p>
+</div>
+
+<div class="muscle-card" onclick="showExercises('legs', this)">
+<i class="fa-solid fa-person-running"></i>
+<p>Legs</p>
+</div>
+
+<div class="muscle-card" onclick="showExercises('arms', this)">
+<i class="fa-solid fa-hand-fist"></i>
+<p>Arms</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="exercise-section">
+
+<h2 id="exerciseTitle">Exercises</h2>
+
+<div id="exerciseContainer" class="exercise-grid"></div>
+
+</section>
+
+
+<section class="container">
+
+<h2>Today's Workout</h2>
+
+<div id="workoutSections"></div>
+
+</section>
+
+
+
+<!-- BMI POPUP -->
+
+<div id="bmiPopup" class="bmi-popup">
+
+<div class="bmi-card">
+
+<i class="fa-solid fa-xmark close-icon" onclick="closeBMI()"></i>
+
+<h2>BMI Calculator</h2>
+
+<input type="number" id="height" placeholder="Height (cm)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<button onclick="calculateBMI()">Calculate</button>
+
+<h3 id="bmiResult"></h3>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
